@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements FileData {
     }
 
     public void straightLine(int startX, int startY, int endX, int endY) {
+        drawOption();
         path.moveTo(startX, startY);
         path.lineTo(endX, endY);
         canvas.drawPath(path, paint);
